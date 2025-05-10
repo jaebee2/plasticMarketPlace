@@ -10,28 +10,30 @@ body {
 body {
   /* font-family: 'Segoe UI', sans-serif; */
   background-color: #f9f8f4;
-  color: #2f3e2f;
+  color: #212c21;
   line-height: 1.6;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 /* HERO SECTION */
 .hero {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
   flex-wrap: wrap;
-  background-color: #f0f4e9;
-  padding: 60px 20px;
-  border-radius: 8px;
+  background: url(/images/Property\ 1=Slider\ component\ 1.svg) ;
+  background-repeat: no-repeat;
   text-align: center;
   margin-bottom: 60px;
 }
 
 .hero-text {
   flex: 1;
-  min-width: 280px;
-  max-width: 600px;
+  min-width: 50%;
+  max-width: 60%;
+  background: #2b5c2bbe;
+  clip-path: polygon(98% 0, 76% 76%, 95% 61%, 85% 100%, 0 100%, 0 0);
+  padding: 60px 20px;
+  padding-right: 100px;
+  text-align: left;
 }
 
 .hero-image {
@@ -41,14 +43,15 @@ body {
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 20px;
+  color: #b9b7b7;
 }
 
 .hero p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 30px;
-  color: #4d5c4d;
+  color: #aaa9a9;
 }
 
 .hero-buttons {
@@ -59,15 +62,16 @@ body {
 
 .primary-btn,
 .secondary-btn {
-  padding: 12px 24px;
-  font-size: 1rem;
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  width: 150px;
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .primary-btn {
-  background-color: #2f4f2f;
+  background-color: #223a22;
   color: #fff;
   border: none;
 }
@@ -78,17 +82,111 @@ body {
 
 .secondary-btn {
   background-color: transparent;
-  border: 2px solid #2f4f2f;
-  color: #2f4f2f;
+  border: 2px solid #233d23;
+  color: #162516;
 }
 
 .secondary-btn:hover {
-  background-color: #e2eee2;
+  background-color: #233d23;
+  color: #f9f8f4;
 }
+/* ABOUT SECTION */
+.about{
+  padding: 10px 50px;
+}
+.about h2{
+  text-align: center;
+  padding-right: 50px;
+  font-size: 2rem;
+}
+.words-a{
+  display: flex;
+  justify-content: space-around;
+}
+.about img{
+  height: 300px;
+  margin: 20px;
+}
+.about p{
+  margin: 20px 0;
+  padding: 10px 20px;
+  font-size: 1rem;
+  width: 500px;
+}
+svg{
+  width: 60px;
+  height: 60px;
+  fill: #375a37;
+}
+/* SERVICES SECTION */
+.services{
+  background: #375a378c;
+  padding: 60px 0;
 
+}
+.services h2{
+ text-align: center;
+ font-size: 2rem;
+}
+.card{
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin: 10px;
+}
+.cardtop{
+  width: 90%;
+  height: 50%;
+  background: url(/images/unsplash_Hwb7pPIK6FY.png) center ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  color: #fff;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+.text-space{
+  padding: 0 10px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  color: #333;
+  font-size: 15px;
+  text-align: center;
+}
+.text-space h2{
+  margin-bottom: 10px;
+}
+.text-space{
+  font-size: 15px;
+}
+.text-space button{
+  padding: 7px 10px;
+  border: none;
+  background: #233d23;
+  border-radius: 5px;
+  color: #f9f8f4;
+  margin-bottom: 20px;
+}
+.card-place{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
 /* HOW IT WORKS SECTION */
 .how-it-works {
-  margin-bottom: 60px;
+  background: #2b462ba2;
+  padding: 60px 0;
 }
 
 .how-it-works h2 {
@@ -119,6 +217,11 @@ body {
 }
 
 /* MARKETPLACE SECTION */
+.marketplace {
+  background: #34522da2;
+  padding: 60px 0;
+}
+
 .marketplace h2 {
   text-align: center;
   font-size: 2rem;
@@ -148,7 +251,9 @@ body {
 
 /* WHY CHOOSE US SECTION */
 .why-choose-us {
-  margin-top: 60px;
+  background: #2b462ba2;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .why-choose-us h2 {
@@ -167,4 +272,20 @@ body {
 .benefit {
   max-width: 300px;
   text-align: center;
+}
+@media(max-width:950px){
+  .about img{
+    height: 76vh;
+    margin: 20px;
+  }
+  .about p{
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+  }
+  .card-place {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px; /* Optional: Adds spacing between grid items */
+  }
 }
